@@ -1,6 +1,7 @@
-./public
-./node_modules
-./hot
-./mix-manifest.json
-./DS_Store
+public
+node_modules
+hot
+mix-manifest.json
+.DS_Store
+.idea
 

@@ -1,11 +1,8 @@
 {
-  "name": "maxilo-vue",
-  "version": "1.0.0",
-  "description": "maxilo vue template",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maxiloEmmmm/maxilo-vue-template.git"
-  },
+  "name": "maxilo-vue-bootstrap-component",
+  "version": "1.0.3",
+  "description": "vue component for pc",
+  "main": "dist/index.js",
   "scripts": {
     "analyzer": "cross-env NODE_ENV=production_analyzer node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -15,18 +12,16 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "keywords": [
-    "maxilo",
+    "bootstrap",
     "vue",
-    "template"
+    "maxilo",
+    "conponment"
   ],
   "author": "maxilo",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/maxiloEmmmm/maxilo-vue-template/issues"
-  },
-  "homepage": "https://github.com/maxiloEmmmm/maxilo-vue-template#readme",
   "dependencies": {
     "cross-env": "^5.1.4",
-    "maxilo-vue": "^1.0.9"
+    "maxilo-vue": "^1.0.53",
+    "maxilo-vue-bootstrap-component": "^1.0.8"
   }
 }
