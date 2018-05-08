@@ -35,11 +35,12 @@ export default {
     async mounted(){
         let { data } = await this.$http.post(this.u);
         this.response = JSON.stringify(data);
-        this.$http.post('/auth/login', {
+        let {d} = await this.$http.post('/auth/login', {
             username: 1,
             password: 2,
             code: 3
         });
+        console.log(d);
     },
     methods: {
         t(){
