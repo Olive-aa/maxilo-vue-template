@@ -1,8 +1,8 @@
 import mockService from 'maxilo-vue/lib/core/mocks/utils';
+import mocks from './.mock';
+import raps from './.rap.json';
 
 let service = new mockService;
-
-let mocks = require('./.mock');
 
 Object.keys(mocks).forEach((k) => {
     let build = 'resolve';
@@ -10,8 +10,8 @@ Object.keys(mocks).forEach((k) => {
     if(v.reg) {
         build = 'resolveREG';
     }
+    console.log(1);
     service[build](k, v.build, v.type, v.title);
 });
-service.resolveRap(require('./.rap.json'));
-let raps = require('./.rap.json');
-console.log(raps);
+service.resolveRap(raps.data);
+service.run();
