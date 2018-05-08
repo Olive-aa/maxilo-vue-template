@@ -10,6 +10,8 @@ Object.keys(mocks).forEach((k) => {
     if(v.reg) {
         build = 'resolveREG';
     }
+    console.log(1);
+    
     service[build](k, v.build, v.type, v.title);
 });
 service.resolveRap(raps.data);

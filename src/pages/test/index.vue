@@ -35,7 +35,7 @@ export default {
     async mounted(){
         let { data } = await this.$http.post(this.u);
         this.response = JSON.stringify(data);
-        let {d} = await this.$http.post('/auth/login', {
+        let {data:d} = await this.$http.post('/auth/login', {
             username: 1,
             password: 2,
             code: 3
