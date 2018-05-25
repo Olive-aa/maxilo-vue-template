@@ -1,8 +1,10 @@
 import maxiloVue from 'maxilo-vue';
+import App from './App';
 import './router';
 import './store';
 import './i18n';
+import './utils';
 import './component';
-
 maxiloVue.config.debug = true;
+maxiloVue.targetComponent = App;
 maxiloVue.run();
