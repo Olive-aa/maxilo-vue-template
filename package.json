@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "cross-env": "^5.1.4",
-    "maxilo-vue": "^1.2.12",
-    "maxilo-vue-bootstrap-component": "^1.0.8"
+    "maxilo-vue": "^1.2.40",
+    "maxilo-vue-bootstrap-component": "^1.0.10"
   }
 }

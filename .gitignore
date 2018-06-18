@@ -4,3 +4,5 @@ hot
 mix-manifest.json
 .DS_Store
 .idea
+src/.env
+src/.mock
