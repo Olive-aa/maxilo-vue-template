@@ -13,6 +13,12 @@ buildInstance.resolve({
     store: utils.resolve('src/store'),
     utils: utils.resolve('src/utils')
 });
+//cordova 素材输出目录
+//buildInstance.setPublicDir(utils.resolve('/test/platforms/ios/www/assets'));
+//素材访问路径
+//buildInstance.setPublicPath('./assets/');
+//index.html输出路径
+//buildInstance.indexOutputDir = utils.resolve('../../xjbtsme/CODE/doctor/index.html')
 
 buildInstance.add('./src/index.js', 'js/index.js');
 buildInstance.run();
