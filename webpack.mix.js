@@ -11,7 +11,8 @@ buildInstance.resolve({
     pages: utils.resolve('src/pages'),
     mixs: utils.resolve('src/mixs'),
     store: utils.resolve('src/store'),
-    utils: utils.resolve('src/utils')
+    utils: utils.resolve('src/utils'),
+    api: utils.resolve('src/api')
 });
 //cordova 素材输出目录
 //buildInstance.setPublicDir(utils.resolve('/test/platforms/ios/www/assets'));
