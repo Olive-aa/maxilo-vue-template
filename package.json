@@ -1,27 +1,26 @@
 {
-  "name": "maxilo-vue-bootstrap-component",
-  "version": "1.0.3",
-  "description": "vue component for pc",
-  "main": "dist/index.js",
+  "name": "hello-world",
+  "version": "1.1.0",
+  "private": true,
   "scripts": {
-    "analyzer": "cross-env NODE_ENV=production_analyzer node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --color --compress --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "keywords": [
-    "bootstrap",
-    "vue",
-    "maxilo",
-    "conponment"
-  ],
-  "author": "maxilo",
-  "license": "MIT",
   "dependencies": {
-    "cross-env": "^5.1.4",
-    "maxilo-vue": "^1.2.55",
-    "maxilo-vue-bootstrap-component": "^1.0.35"
+    "maxilo-vue": "^1.2.80",
+    "maxilo-vue-bootstrap-component": "^1.0.80",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
   }
 }

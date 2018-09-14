@@ -1,6 +1,6 @@
 import types from './mutations-type';
 import maxiloVue from 'maxilo-vue';
-import { TEST } from '../../api/test';
+import { TEST } from 'api/test';
 const state = {
     userinfo: {}
 };

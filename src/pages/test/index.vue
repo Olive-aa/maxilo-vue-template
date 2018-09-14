@@ -16,7 +16,7 @@
             <div v-show="errors.has('测试验证')" class="warning">{{ errors.first('测试验证') }}.</div>
         </div>
         <div>
-            <h1>测试mock(将.mock.example 复制一份重命名 .mock):</h1>
+            <h1>测试mock(设置USE_MOCK=1 使用src/.mock.js 或 .rap.json):</h1>
             请求: {{ u }}
             方法: POST
             响应: {{ response ? '√' + (response) : '✘' }}
@@ -42,8 +42,6 @@ export default {
         //     password: 2,
         //     code: 3
         // });
-        let { data:q } = await this.$http.get('/doctor/manage/list');
-        console.log(q);
     },
     beforeRouteLeave(to, from, next){
         let answer = true;

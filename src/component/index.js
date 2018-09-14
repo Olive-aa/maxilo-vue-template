@@ -1,8 +1,9 @@
-import maxiloVueBootstrapComponent from 'maxilo-vue-bootstrap-component';
+import maxiloVueBootstrapComponentInstall from 'maxilo-vue-bootstrap-component';
 import maxiloVue from 'maxilo-vue';
+maxiloVueBootstrapComponentInstall(maxiloVue, {useAlert: true});
 
-maxiloVue.vue.depComponent(maxiloVueBootstrapComponent);
-
+//import tree from './tree.vue';
+//maxiloVue.vue.component(tree.name, tree);
 //example for dep
 
 // maxiloVue.vue.depComponent({

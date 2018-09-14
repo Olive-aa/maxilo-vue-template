@@ -1,7 +1,6 @@
 import mockService from 'maxilo-vue/lib/core/mocks/utils';
 import mocks from './.mock';
 let service = new mockService;
-
 Object.keys(mocks).forEach((k) => {
     let build = 'resolve';
     let v = mocks[k];

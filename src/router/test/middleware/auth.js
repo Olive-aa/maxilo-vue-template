@@ -1,6 +1,6 @@
 export default function (store, to, from, next) {
     if (!store.getters['testAuth/login']) {
-        next('/platform/login');
+        alert('middleware:auth is failed.');
         return false;
     }
     return true;
