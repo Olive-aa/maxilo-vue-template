@@ -8,8 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "maxilo-vue": "^1.2.82",
-    "maxilo-vue-bootstrap-component": "^1.0.82"
+    "maxilo-vue": "1.2.86",
+    "maxilo-vue-bootstrap-component": "1.0.84"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "3.0.1",
